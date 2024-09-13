@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +5,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -19,14 +19,14 @@ body {
 }
 
 .header {
-    background-color: #333;
+    background-color: #123a41;
     color: #fff;
     padding: 40px 0;
     text-align: center;
 }
 
 .header h1 {
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .header p {
@@ -35,92 +35,113 @@ body {
     color: #ccc;
 }
 
-.about {
-    padding: 40px 0;
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.nav ul li {
+    margin: 0 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 18px;
+    background-color: #2A3740;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.nav ul li a:hover {
+    background-color: #697565;
+}
+
+.about, .projects, .contact {
+    padding: 60px 0;
     text-align: center;
 }
 
-.about h2 {
-    font-size: 28px;
+.about h2, .projects h2, .contact h2 {
+    font-size: 24px;
     margin-bottom: 20px;
+    color: #333;
 }
 
-.about p {
+.about p, .projects p, .contact p {
     font-size: 18px;
-    color: #555;
+    color: #666;
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto 40px auto;
 }
 
 .projects {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.projects h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    background-color: #f4f4f4;
 }
 
 .project-grid {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
 }
 
 .project-card {
-    background-color: #fff;
+    background-color: #F2FFF3;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
     width: 30%;
     min-width: 250px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
 }
 
 .project-card h3 {
     font-size: 22px;
     margin-bottom: 10px;
+    color: #333;
+    margin-top: 120px;
 }
 
 .project-card p {
     font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .project-link {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #333;
+    background-color: #2A3740;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
+    transition: background-color 0.3s ease;
 }
 
 .project-link:hover {
-    background-color: #555;
+    background-color: #697565;
 }
 
-.contact {
-    padding: 40px 0;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.contact p {
-    font-size: 18px;
-    color: #555;
-    max-width: 700px;
-    margin: auto;
-    margin-bottom: 20px;
+.proctorly-card {
+    background: url('./Edit,org_design_01-09-17--20_processed 3.png') no-repeat top;
+    background-color: #F2FFF3;
+    background-size: 150px;
+    color: #333;
+    padding: 20px;
+    position: relative;
+    min-height: 300px;
 }
 
 .contact-links a {
@@ -128,17 +149,18 @@ body {
     margin: 0 10px;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #333;
+    background-color: #2A3740;
     color: #fff;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .contact-links a:hover {
-    background-color: #555;
+    background-color: #697565;
 }
 
 .footer {
-    background-color: #333;
+    background-color: #123a41;
     color: #fff;
     text-align: center;
     padding: 20px 0;
